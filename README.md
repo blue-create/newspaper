@@ -10,11 +10,11 @@ If you want to directly have a look at the training articles, plick click [here]
 To get started, please install all the dependencies via the following code in the terminal: 
 
 ```
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 ``` 
 
 Please update the requirements.txt file with the following code in the terminal: 
 
 ```
-pip freeze > requirements.txt
+pip3 freeze > requirements.txt
 ```
