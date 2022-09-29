@@ -1,4 +1,23 @@
 class Preprocessor:
+""" Docustring for comments about this class:
+    
+    Different pre-processing steps should live in separate functions
+    
+        Usual steps: 
+        > lowercase 
+        > remove punctuation/numbers/special characters 
+        > tokenize (using spacy pipe) 
+        > remove stopwords (maybe using nltk list)
+        > lemmatize (NB: should be a separate function for this)
+        
+     Functions should not alter corpus metadata (date/newspaper)! 
+         Exception: title may need to be tidied up {task for later}
+         
+         Current behaviour: preprocessor removes all other indexes 
+         eg. title/date/newspaper is not returned
+         
+"""
+    
     def __init__(self, newspaper_data, nlp):
         self.title = newspaper_data[0]
         self.newspaper = newspaper_data[3]

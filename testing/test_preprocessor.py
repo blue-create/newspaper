@@ -1,5 +1,5 @@
 import spacy
-from preprocess_articles import Preprocessor
+from modules.preprocess_articles import Preprocessor
 
 def test_preprocessor():
     # given
