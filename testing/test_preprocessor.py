@@ -1,5 +1,13 @@
 import spacy
-from preprocess_articles import Preprocessor
+from modules.preprocess_articles import *
+
+""" Docustring comment for testing:
+	unfortunately it seems we will have to restructure 
+	this entire thing as a package for it to work
+	
+	Will do this later
+
+"""
 
 def test_preprocessor():
     # given
