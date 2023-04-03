@@ -1,0 +1,28 @@
+<!ELEMENT artikel-liste (artikel+)>
+<!ELEMENT artikel (metadaten, indexat?, inhalt, abbildung?)>
+<!ELEMENT metadaten (artikel-id?, quelle?, autor?)>
+<!ELEMENT inhalt (titel-liste?, abstract?, vorspann?, text?, kasten?)>
+<!ELEMENT quelle (quelle-id?, name?, jahrgang?, nummer?, datum?, seite-start?, seite-ende?)>
+<!ELEMENT autor (autor-name*)>
+<!ELEMENT titel-liste (rubrik?, ressort?, dachzeile?, titel?, untertitel?)>
+<!ELEMENT abbildung (bildunterschrift?)>
+<!ELEMENT text (p*)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT artikel-id (#PCDATA)>
+<!ELEMENT quelle-id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT nummer (#PCDATA)>
+<!ELEMENT jahrgang (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+<!ELEMENT seite-start (#PCDATA)>
+<!ELEMENT seite-ende (#PCDATA)>
+<!ELEMENT autor-name (#PCDATA)>
+<!ELEMENT ressort (#PCDATA)>
+<!ELEMENT rubrik (#PCDATA)>
+<!ELEMENT dachzeile (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT untertitel (#PCDATA)>
+<!ELEMENT abstract (#PCDATA)>
+<!ELEMENT vorspann (#PCDATA)>
+<!ELEMENT kasten ANY>
+<!ELEMENT bildunterschrift (#PCDATA)>
